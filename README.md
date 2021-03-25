@@ -2,7 +2,4 @@
 
 A multiplayer version of wordladders!
 
-First you must run the virtual environment:
-```
-source bin/activate
-```
+Built with django 2.2.7.
