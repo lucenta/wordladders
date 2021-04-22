@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Home Bitch</h1>
+{{request.user}}
+<p>This is a p tag</p>
+
+<p>
+	{{ my_text }},{{ my_number }},{{my_list}}
+</p>
+
+{{my_html|upper|safe}}
+
+<ul>
+{% for i in my_list %}
+	{% if i == 1 %}
+		<li>{{i|add:123}}</li>
+	{% else %}
+		<li>{{i}}</li>
+	{% endif %}
+{% endfor %}
+</ul>
+
+{% endblock %}
